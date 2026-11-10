@@ -1,0 +1,36 @@
+# Publication du site sur Azure Static Web Apps (AI Dynamic, D-040).
+# Seule une fusion sur main publie : pas de déclencheur pull_request, donc pas d'aperçu public
+# du contenu des agents avant relecture (stagingEnvironmentPolicy est aussi à Disabled côté Azure).
+# Actions épinglées par SHA (S-035). L'image lancée par l'action Azure
+# (mcr.microsoft.com/appsvc/staticappsclient:stable) n'est pas épinglée : risque accepté pour le lab.
+name: deploiement
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: deploiement
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: Azure/static-web-apps-deploy@4d27395796ac319302594769cfe812bd207490b1 # v1 (branche, 2024-09-11)
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          action: upload
+          app_location: site
+          output_location: ""
+          skip_app_build: true
+          skip_api_build: true
