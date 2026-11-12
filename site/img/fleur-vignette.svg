@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="titre-fleur-vignette">
+  <title id="titre-fleur-vignette">Vignette : fleur de passiflore simplifiée, cinq pétales violets et trois styles</title>
+  <!-- Sépales verts, derrière les pétales -->
+  <g fill="#2f6b3a" stroke="#1f4a28" stroke-width="1.2">
+    <ellipse cx="100" cy="56" rx="10" ry="40" transform="rotate(36 100 100)"/>
+    <ellipse cx="100" cy="56" rx="10" ry="40" transform="rotate(108 100 100)"/>
+    <ellipse cx="100" cy="56" rx="10" ry="40" transform="rotate(180 100 100)"/>
+    <ellipse cx="100" cy="56" rx="10" ry="40" transform="rotate(252 100 100)"/>
+    <ellipse cx="100" cy="56" rx="10" ry="40" transform="rotate(324 100 100)"/>
+  </g>
+  <!-- Pétales violets -->
+  <g fill="#8a5cb8" stroke="#4a2a6b" stroke-width="1.5">
+    <ellipse cx="100" cy="54" rx="18" ry="38" transform="rotate(0 100 100)"/>
+    <ellipse cx="100" cy="54" rx="18" ry="38" transform="rotate(72 100 100)"/>
+    <ellipse cx="100" cy="54" rx="18" ry="38" transform="rotate(144 100 100)"/>
+    <ellipse cx="100" cy="54" rx="18" ry="38" transform="rotate(216 100 100)"/>
+    <ellipse cx="100" cy="54" rx="18" ry="38" transform="rotate(288 100 100)"/>
+  </g>
+  <!-- Couronne simplifiée : disque violet, anneau blanc, centre foncé et filaments -->
+  <circle cx="100" cy="100" r="36" fill="#8a5cb8" stroke="#4a2a6b" stroke-width="1"/>
+  <circle cx="100" cy="100" r="25" fill="#ffffff"/>
+  <circle cx="100" cy="100" r="13" fill="#4a2a6b"/>
+  <g stroke="#3b1f52" stroke-width="1" stroke-linecap="round">
+    <line x1="100" y1="87" x2="100" y2="66"/>
+    <line x1="111.9" y1="91.9" x2="127.6" y2="76.2"/>
+    <line x1="113" y1="100" x2="134" y2="100"/>
+    <line x1="111.9" y1="108.1" x2="127.6" y2="123.8"/>
+    <line x1="100" y1="113" x2="100" y2="134"/>
+    <line x1="88.1" y1="108.1" x2="72.4" y2="123.8"/>
+    <line x1="87" y1="100" x2="66" y2="100"/>
+    <line x1="88.1" y1="91.9" x2="72.4" y2="76.2"/>
+  </g>
+  <!-- Trois styles terminés par des stigmates -->
+  <line x1="100" y1="100" x2="100" y2="58" stroke="#4a2a6b" stroke-width="5" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="100" y2="58" stroke="#fff8dc" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="100" cy="57" r="4.5" fill="#e8c547" stroke="#7a6410" stroke-width="1"/>
+  <line x1="100" y1="100" x2="136.4" y2="121" stroke="#4a2a6b" stroke-width="5" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="136.4" y2="121" stroke="#fff8dc" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="137.2" cy="121.5" r="4.5" fill="#e8c547" stroke="#7a6410" stroke-width="1"/>
+  <line x1="100" y1="100" x2="63.6" y2="121" stroke="#4a2a6b" stroke-width="5" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="63.6" y2="121" stroke="#fff8dc" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="62.8" cy="121.5" r="4.5" fill="#e8c547" stroke="#7a6410" stroke-width="1"/>
+</svg>
