@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="titre-fruit">
+  <title id="titre-fruit">Fruit de la passion entier, à côté d'une moitié coupée montrant la pulpe jaune et les graines sombres</title>
+  <!-- Fruit entier -->
+  <ellipse cx="60" cy="110" rx="44" ry="50" fill="#6b3e8f" stroke="#3b1f52" stroke-width="2"/>
+  <path d="M60 60 Q 52 110 60 160" fill="none" stroke="#3b1f52" stroke-width="1.5" opacity="0.5"/>
+  <!-- Moitié coupée -->
+  <circle cx="150" cy="110" r="44" fill="#6b3e8f" stroke="#3b1f52" stroke-width="2"/>
+  <circle cx="150" cy="110" r="36" fill="#f0c75e"/>
+  <g fill="#3b2a1a">
+    <circle cx="138" cy="98" r="3"/>
+    <circle cx="154" cy="92" r="3"/>
+    <circle cx="150" cy="112" r="3"/>
+    <circle cx="136" cy="118" r="3"/>
+    <circle cx="162" cy="106" r="3"/>
+    <circle cx="146" cy="126" r="3"/>
+    <circle cx="126" cy="106" r="3"/>
+    <circle cx="165" cy="124" r="3"/>
+  </g>
+</svg>
