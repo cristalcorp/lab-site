@@ -3,18 +3,10 @@
   <title id="titre-plante">Tige grimpante de passiflore avec deux feuilles lobées et une vrille enroulée en spirale</title>
   <!-- Tige -->
   <path d="M20 190 C 60 120, 120 160, 150 95 S 230 45, 285 15" fill="none" stroke="#2f6b3a" stroke-width="5" stroke-linecap="round"/>
-  <!-- Feuille 1 (lobes) -->
-  <g transform="translate(150 95)" fill="#4c9a3c" stroke="#1f4a28" stroke-width="1.2">
-    <ellipse cx="0" cy="-20" rx="8" ry="20"/>
-    <ellipse cx="0" cy="-20" rx="8" ry="20" transform="rotate(-50)"/>
-    <ellipse cx="0" cy="-20" rx="8" ry="20" transform="rotate(50)"/>
-  </g>
-  <!-- Feuille 2 (lobes) -->
-  <g transform="translate(225 52) rotate(20)" fill="#4c9a3c" stroke="#1f4a28" stroke-width="1.2">
-    <ellipse cx="0" cy="-16" rx="6" ry="16"/>
-    <ellipse cx="0" cy="-16" rx="6" ry="16" transform="rotate(-50)"/>
-    <ellipse cx="0" cy="-16" rx="6" ry="16" transform="rotate(50)"/>
-  </g>
-  <!-- Vrille en spirale -->
-  <path d="M152 92 q 12 -22 28 -14 q 12 8 2 20 q -8 8 -16 0 q -4 -4 2 -8" fill="none" stroke="#2f6b3a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Feuille 1 : trois lobes -->
+  <g transform="translate(150.0 95.0) rotate(-30) scale(1.0)" fill="#4c9a3c" stroke="#1f4a28" stroke-width="1.2"><path transform="rotate(-40)" d="M0 0 Q -13 -19.0 0 -38 Q 13 -19.0 0 0Z"/><path transform="rotate(0)" d="M0 0 Q -13 -19.0 0 -38 Q 13 -19.0 0 0Z"/><path transform="rotate(40)" d="M0 0 Q -13 -19.0 0 -38 Q 13 -19.0 0 0Z"/></g>
+  <!-- Feuille 2 : trois lobes, plus petite -->
+  <g transform="translate(225.0 52.0) rotate(40) scale(0.8)" fill="#4c9a3c" stroke="#1f4a28" stroke-width="1.2"><path transform="rotate(-40)" d="M0 0 Q -13 -19.0 0 -38 Q 13 -19.0 0 0Z"/><path transform="rotate(0)" d="M0 0 Q -13 -19.0 0 -38 Q 13 -19.0 0 0Z"/><path transform="rotate(40)" d="M0 0 Q -13 -19.0 0 -38 Q 13 -19.0 0 0Z"/></g>
+  <!-- Vrille enroulée en spirale -->
+  <path d="M146.0 82.0 L146.3 79.6 L147.1 77.3 L148.2 75.2 L149.6 73.3 L151.4 71.7 L153.3 70.5 L155.5 69.6 L157.7 69.1 L160.0 69.0 L162.2 69.4 L164.3 70.1 L166.3 71.1 L168.0 72.4 L169.5 74.1 L170.6 75.9 L171.4 77.9 L171.8 79.9 L171.9 82.0 L171.6 84.0 L171.0 86.0 L170.0 87.8 L168.8 89.3 L167.3 90.7 L165.6 91.7 L163.8 92.4 L161.9 92.8 L160.0 92.8 L158.1 92.6 L156.4 92.0 L154.8 91.1 L153.3 90.0 L152.1 88.6 L151.2 87.1 L150.6 85.4 L150.2 83.7 L150.2 82.0 L150.5 80.3 L151.0 78.7 L151.8 77.3 L152.9 76.0 L154.1 74.9 L155.4 74.1 L156.9 73.6 L158.5 73.3 L160.0 73.2 L161.5 73.5 L162.9 74.0 L164.2 74.7 L165.3 75.7 L166.3 76.8 L167.0 78.0 L167.5 79.3 L167.7 80.6 L167.7 82.0 L167.5 83.3 L167.0 84.6 L166.4 85.7 L165.5 86.6 L164.6 87.5 L163.5 88.1 L162.4 88.5 L161.2 88.7 L160.0 88.7 L158.9 88.4 L157.8 88.0 L156.8 87.5 L156.0 86.7 L155.4 85.9 L154.8 85.0 L154.5 84.0 L154.4 83.0 L154.4 82.0 L154.6 81.0 L155.0 80.2 L155.5 79.4 L156.1 78.7 L156.8 78.2 L157.6 77.8 L158.4 77.5 L159.2 77.4 L160.0 77.5 L160.8 77.6 L161.5 77.9 L162.1 78.4 L162.6 78.9 L163.0 79.5 L163.3 80.1 L163.5 80.7 L163.6 81.4 L163.5 82.0" fill="none" stroke="#2f6b3a" stroke-width="2.2" stroke-linecap="round"/>
 </svg>

@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="titre-fruit">
   <title id="titre-fruit">Fruit de la passion entier, à côté d'une moitié coupée montrant la pulpe jaune et les graines sombres</title>
-  <!-- Fruit entier -->
-  <ellipse cx="60" cy="110" rx="44" ry="50" fill="#6b3e8f" stroke="#3b1f52" stroke-width="2"/>
-  <path d="M60 60 Q 52 110 60 160" fill="none" stroke="#3b1f52" stroke-width="1.5" opacity="0.5"/>
-  <!-- Moitié coupée -->
-  <circle cx="150" cy="110" r="44" fill="#6b3e8f" stroke="#3b1f52" stroke-width="2"/>
-  <circle cx="150" cy="110" r="36" fill="#f0c75e"/>
+  <!-- Tige -->
+  <path d="M55 52 Q 58 36 70 28" fill="none" stroke="#2f6b3a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Fruit entier : coque ferme, nervures et taches -->
+  <ellipse cx="55" cy="104" rx="42" ry="48" fill="#6b3e8f" stroke="#3b1f52" stroke-width="2"/>
+  <path d="M37 58 Q 26.2 104 37 150" fill="none" stroke="#3b1f52" stroke-width="1.2" opacity="0.45"/>
+  <path d="M55 58 Q 55.0 104 55 150" fill="none" stroke="#3b1f52" stroke-width="1.2" opacity="0.45"/>
+  <path d="M73 58 Q 83.8 104 73 150" fill="none" stroke="#3b1f52" stroke-width="1.2" opacity="0.45"/>
+  <circle cx="40" cy="84" r="3" fill="#c9a0e8" opacity="0.5"/>
+  <circle cx="66" cy="74" r="2.5" fill="#c9a0e8" opacity="0.5"/>
+  <circle cx="72" cy="120" r="3.5" fill="#c9a0e8" opacity="0.5"/>
+  <circle cx="44" cy="132" r="2.5" fill="#c9a0e8" opacity="0.5"/>
+  <circle cx="58" cy="98" r="2" fill="#c9a0e8" opacity="0.5"/>
+  <!-- Moitié coupée : coque, pulpe jaune et graines sombres -->
+  <circle cx="148" cy="104" r="44" fill="#6b3e8f" stroke="#3b1f52" stroke-width="2"/>
+  <circle cx="148" cy="104" r="37" fill="#e9b93e" stroke="#c48f1e" stroke-width="1"/>
+  <circle cx="148" cy="104" r="31" fill="#f5d77a"/>
   <g fill="#3b2a1a">
-    <circle cx="138" cy="98" r="3"/>
-    <circle cx="154" cy="92" r="3"/>
-    <circle cx="150" cy="112" r="3"/>
-    <circle cx="136" cy="118" r="3"/>
-    <circle cx="162" cy="106" r="3"/>
-    <circle cx="146" cy="126" r="3"/>
-    <circle cx="126" cy="106" r="3"/>
-    <circle cx="165" cy="124" r="3"/>
+    <ellipse cx="144.2" cy="107.4" rx="2.6" ry="1.8" transform="rotate(37 144.2 107.4)"/>
+    <ellipse cx="148.6" cy="96.8" rx="2.6" ry="1.8" transform="rotate(74 148.6 96.8)"/>
+    <ellipse cx="153.4" cy="111.0" rx="2.6" ry="1.8" transform="rotate(111 153.4 111.0)"/>
+    <ellipse cx="137.9" cy="102.2" rx="2.6" ry="1.8" transform="rotate(148 137.9 102.2)"/>
+    <ellipse cx="157.6" cy="97.9" rx="2.6" ry="1.8" transform="rotate(5 157.6 97.9)"/>
+    <ellipse cx="144.8" cy="116.1" rx="2.6" ry="1.8" transform="rotate(42 144.8 116.1)"/>
+    <ellipse cx="141.8" cy="92.0" rx="2.6" ry="1.8" transform="rotate(79 141.8 92.0)"/>
+    <ellipse cx="161.6" cy="108.9" rx="2.6" ry="1.8" transform="rotate(116 161.6 108.9)"/>
+    <ellipse cx="133.9" cy="109.9" rx="2.6" ry="1.8" transform="rotate(153 133.9 109.9)"/>
+    <ellipse cx="154.8" cy="89.4" rx="2.6" ry="1.8" transform="rotate(10 154.8 89.4)"/>
+    <ellipse cx="153.1" cy="120.1" rx="2.6" ry="1.8" transform="rotate(47 153.1 120.1)"/>
+    <ellipse cx="132.7" cy="95.2" rx="2.6" ry="1.8" transform="rotate(84 132.7 95.2)"/>
+    <ellipse cx="166.0" cy="100.0" rx="2.6" ry="1.8" transform="rotate(121 166.0 100.0)"/>
+    <ellipse cx="137.0" cy="119.6" rx="2.6" ry="1.8" transform="rotate(158 137.0 119.6)"/>
+    <ellipse cx="145.4" cy="84.4" rx="2.6" ry="1.8" transform="rotate(15 145.4 84.4)"/>
+    <ellipse cx="163.6" cy="117.1" rx="2.6" ry="1.8" transform="rotate(52 163.6 117.1)"/>
+    <ellipse cx="127.0" cy="104.9" rx="2.6" ry="1.8" transform="rotate(89 127.0 104.9)"/>
+    <ellipse cx="163.3" cy="88.7" rx="2.6" ry="1.8" transform="rotate(126 163.3 88.7)"/>
+    <ellipse cx="147.0" cy="126.2" rx="2.6" ry="1.8" transform="rotate(163 147.0 126.2)"/>
+    <ellipse cx="133.3" cy="86.5" rx="2.6" ry="1.8" transform="rotate(20 133.3 86.5)"/>
+    <ellipse cx="171.2" cy="107.1" rx="2.6" ry="1.8" transform="rotate(57 171.2 107.1)"/>
+    <ellipse cx="128.4" cy="117.7" rx="2.6" ry="1.8" transform="rotate(94 128.4 117.7)"/>
+    <ellipse cx="153.3" cy="80.1" rx="2.6" ry="1.8" transform="rotate(131 153.3 80.1)"/>
+    <ellipse cx="160.5" cy="125.6" rx="2.6" ry="1.8" transform="rotate(168 160.5 125.6)"/>
+    <ellipse cx="123.7" cy="96.3" rx="2.6" ry="1.8" transform="rotate(25 123.7 96.3)"/>
+    <ellipse cx="171.6" cy="93.0" rx="2.6" ry="1.8" transform="rotate(62 171.6 93.0)"/>
+    <ellipse cx="137.9" cy="128.5" rx="2.6" ry="1.8" transform="rotate(99 137.9 128.5)"/>
   </g>
 </svg>
