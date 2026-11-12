@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-labelledby="titre-plante">
+  <title id="titre-plante">Tige grimpante de passiflore avec deux feuilles lobées et une vrille enroulée en spirale</title>
+  <!-- Tige -->
+  <path d="M20 190 C 60 120, 120 160, 150 95 S 230 45, 285 15" fill="none" stroke="#2f6b3a" stroke-width="5" stroke-linecap="round"/>
+  <!-- Feuille 1 (lobes) -->
+  <g transform="translate(150 95)" fill="#4c9a3c" stroke="#1f4a28" stroke-width="1.2">
+    <ellipse cx="0" cy="-20" rx="8" ry="20"/>
+    <ellipse cx="0" cy="-20" rx="8" ry="20" transform="rotate(-50)"/>
+    <ellipse cx="0" cy="-20" rx="8" ry="20" transform="rotate(50)"/>
+  </g>
+  <!-- Feuille 2 (lobes) -->
+  <g transform="translate(225 52) rotate(20)" fill="#4c9a3c" stroke="#1f4a28" stroke-width="1.2">
+    <ellipse cx="0" cy="-16" rx="6" ry="16"/>
+    <ellipse cx="0" cy="-16" rx="6" ry="16" transform="rotate(-50)"/>
+    <ellipse cx="0" cy="-16" rx="6" ry="16" transform="rotate(50)"/>
+  </g>
+  <!-- Vrille en spirale -->
+  <path d="M152 92 q 12 -22 28 -14 q 12 8 2 20 q -8 8 -16 0 q -4 -4 2 -8" fill="none" stroke="#2f6b3a" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

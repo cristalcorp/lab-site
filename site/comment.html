@@ -4,18 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Comment ce site est fait</title>
-<style>
-  body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.6; color: #1d1d1f; background: #fafafa; }
-  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem; }
-  h1 { font-size: 2rem; margin: 0 0 1rem; }
-  h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
-  p { margin: 0 0 1rem; }
-  ul { padding-left: 1.25rem; margin: 0 0 1rem; }
-  a { color: #0b5cad; }
-  footer { margin-top: 3rem; font-size: 0.9rem; color: #6e6e73; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="site-header">
+  <p class="site-name"><a href="index.html">Lab</a></p>
+  <nav aria-label="Menu principal">
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="fleur.html">La fleur</a></li>
+      <li><a href="plante.html">La plante</a></li>
+      <li><a href="fruit.html">Le fruit</a></li>
+      <li><a href="comment.html" aria-current="page">Comment ce site est fait</a></li>
+    </ul>
+  </nav>
+</header>
+
 <main>
   <p><a href="index.html">← Retour à l'accueil</a></p>
 
@@ -36,7 +40,10 @@
   <h2>Ce que ce n'est pas</h2>
   <p>Ce site ne collecte aucune donnée, ne contient ni formulaire ni fichier à télécharger, et ne présente ni client réel ni offre commerciale.</p>
 
-  <footer>Site du lab — pages statiques, en français.</footer>
+  <footer class="site-footer">
+    <p><a href="comment.html">Comment ce site est fait</a></p>
+    <p>Site du lab — pages statiques, en français.</p>
+  </footer>
 </main>
 </body>
 </html>
