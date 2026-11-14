@@ -1,4 +1,5 @@
-/* Feuille de style commune du site Lab. Aucune ressource externe. */
+/* Feuille de style commune du site Lab. Aucune ressource externe.
+   contraste: texte/fond texte/carte accent/fond accent/carte discret/fond discret/carte vert/fond entete-texte/entete-fond */
 
 :root {
   --fond: #fdf8ec;
