@@ -3,44 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Lab — Les passiflores</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
-  <p class="site-name"><a href="index.html">Lab</a></p>
-  <nav aria-label="Menu principal">
-    <ul class="menu">
-      <li><a href="index.html" aria-current="page">Accueil</a></li>
-      <li><a href="fleur.html">La fleur</a></li>
-      <li><a href="plante.html">La plante</a></li>
-      <li><a href="fruit.html">Le fruit</a></li>
-      <li><a href="comment.html">Comment ce site est fait</a></li>
-    </ul>
-  </nav>
+  <div class="barre">
+    <p class="site-name"><a href="index.html"><img src="img/fleur-vignette.svg" alt="" width="34" height="34">Lab</a></p>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="fleur.html">La fleur</a></li>
+        <li><a href="plante.html">La plante</a></li>
+        <li><a href="fruit.html">Le fruit</a></li>
+        <li><a href="comment.html">Comment ce site est fait</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
-<img class="bandeau" src="img/bandeau.svg" alt="Bandeau décoratif : feuilles lobées et vrilles de passiflore.">
 
 <main>
-  <h1>Les passiflores</h1>
-  <p>Les passiflores sont des plantes à fleurs du genre <em>Passiflora</em>. Elles sont connues pour leurs fleurs très ornées, pour leur port grimpant et pour leurs fruits. Le nom « passiflore » vient du latin <em>passio</em> (passion) : des missionnaires y ont vu les symboles de la Passion du Christ.</p>
+<section class="hero">
+  <div class="contenu">
+    <div>
+      <p class="surtitre">Carnet botanique</p>
+      <h1>Les passiflores</h1>
+      <p>Les passiflores sont des plantes à fleurs du genre <em>Passiflora</em>. Elles sont connues pour leurs fleurs très ornées, pour leur port grimpant et pour leurs fruits. Le nom « passiflore » vient du latin <em>passio</em> (passion) : des missionnaires y ont vu les symboles de la Passion du Christ.</p>
+      <a class="bouton" href="fleur.html">Découvrir la fleur</a>
+    </div>
+    <div class="illustration">
+      <img src="img/fleur.svg" alt="Fleur de passiflore vue de face : sépales verts et pétales blancs en étoile, couronne de filaments en bandes violet foncé, blanc et violet, étamines aux anthères jaunes et trois styles au centre." width="400" height="400">
+    </div>
+  </div>
+</section>
+<div class="frise" aria-hidden="true"></div>
 
-  <figure>
-    <img src="img/fleur.svg" alt="Dessin d'une fleur de passiflore vue de face : cinq pétales violets, une couronne de filaments et trois styles au centre.">
-    <figcaption>Une fleur de passiflore, dessinée pour ce site.</figcaption>
-  </figure>
-
-  <h2>Trois pages</h2>
+<section class="section" aria-labelledby="titre-pages">
+  <h2 id="titre-pages">Trois pages</h2>
+  <p class="intro">La fleur, la plante et le fruit, chacun sur sa page.</p>
   <ul class="cartes">
-    <li><a class="carte" href="fleur.html"><img src="img/fleur-vignette.svg" alt=""><h3>La fleur</h3><p>Sa forme, ses couleurs et sa structure.</p></a></li>
-    <li><a class="carte" href="plante.html"><img src="img/plante.svg" alt=""><h3>La plante</h3><p>Une liane grimpante, ses feuilles et ses vrilles.</p></a></li>
-    <li><a class="carte" href="fruit.html"><img src="img/fruit.svg" alt=""><h3>Le fruit</h3><p>Le fruit de la passion et sa formation.</p></a></li>
+    <li><a class="carte fleur" href="fleur.html"><div class="visuel"><img src="img/fleur-vignette.svg" alt="" width="200" height="200"></div><div class="texte"><h3>La fleur</h3><p>Sa forme, ses couleurs et sa structure.</p><span class="suite">Lire →</span></div></a></li>
+    <li><a class="carte plante" href="plante.html"><div class="visuel"><img src="img/plante.svg" alt="" width="400" height="300"></div><div class="texte"><h3>La plante</h3><p>Une liane grimpante, ses feuilles et ses vrilles.</p><span class="suite">Lire →</span></div></a></li>
+    <li><a class="carte fruit" href="fruit.html"><div class="visuel"><img src="img/fruit.svg" alt="" width="400" height="260"></div><div class="texte"><h3>Le fruit</h3><p>Le fruit de la passion et sa formation.</p><span class="suite">Lire →</span></div></a></li>
   </ul>
+</section>
 </main>
 
 <footer class="site-footer">
-  <p><a href="comment.html">Comment ce site est fait</a></p>
-  <p>Site du lab — pages statiques, en français.</p>
+  <div class="contenu">
+    <p>Site du lab — pages statiques, en français.</p>
+    <p><a href="comment.html">Comment ce site est fait</a></p>
+  </div>
 </footer>
 </body>
 </html>

@@ -3,31 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Le fruit — Lab</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
-  <p class="site-name"><a href="index.html">Lab</a></p>
-  <nav aria-label="Menu principal">
-    <ul class="menu">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="fleur.html">La fleur</a></li>
-      <li><a href="plante.html">La plante</a></li>
-      <li><a href="fruit.html" aria-current="page">Le fruit</a></li>
-      <li><a href="comment.html">Comment ce site est fait</a></li>
-    </ul>
-  </nav>
+  <div class="barre">
+    <p class="site-name"><a href="index.html"><img src="img/fleur-vignette.svg" alt="" width="34" height="34">Lab</a></p>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fleur.html">La fleur</a></li>
+        <li><a href="plante.html">La plante</a></li>
+        <li><a href="fruit.html" aria-current="page">Le fruit</a></li>
+        <li><a href="comment.html">Comment ce site est fait</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
-  <h1>Le fruit</h1>
-
-  <figure>
-    <img src="img/fruit.svg" alt="Dessin d'un fruit de la passion entier, à côté d'une moitié coupée montrant la pulpe jaune et les graines sombres.">
-    <figcaption>Schéma simplifié, dessiné pour ce site.</figcaption>
+<div class="entete-page">
+  <div>
+    <p class="surtitre">Passiflores</p>
+    <h1>Le fruit</h1>
+    <p class="chapo">Le fruit de la passion et sa formation.</p>
+  </div>
+  <figure class="planche fruit">
+    <img src="img/fruit.svg" alt="Fruit de la passion entier, violet, à côté d'une moitié coupée montrant les graines sombres entourées de pulpe jaune." width="400" height="260">
+    <figcaption>Illustration dessinée pour ce site.</figcaption>
   </figure>
+</div>
 
+<article class="article">
   <h2>Le fruit de la passion</h2>
   <p>Chez <em>Passiflora edulis</em>, le fruit est une baie à enveloppe ferme. Il contient de nombreuses graines, chacune entourée d'une pulpe.</p>
 
@@ -40,11 +49,18 @@
 
   <h2>Usages</h2>
   <p>La pulpe du fruit se consomme fraîche ou se transforme en jus, en sirop, en confiture ou en dessert.</p>
+</article>
+
+<nav class="suivantes" aria-label="Pages voisines">
+  <a href="plante.html"><span class="sens">Page précédente</span><span class="titre">← La plante</span></a>
+</nav>
 </main>
 
 <footer class="site-footer">
-  <p><a href="comment.html">Comment ce site est fait</a></p>
-  <p>Site du lab — pages statiques, en français.</p>
+  <div class="contenu">
+    <p>Site du lab — pages statiques, en français.</p>
+    <p><a href="comment.html">Comment ce site est fait</a></p>
+  </div>
 </footer>
 </body>
 </html>
