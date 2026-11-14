@@ -1,0 +1,51 @@
+# Surveillance du site publié (D-045) : chaque page doit répondre 200 avec son titre.
+# En cas d'échec : le run échoue (GitHub prévient par e-mail) et une issue « surveillance » est
+# ouverte ou complétée. GitHub suspend les workflows programmés d'un dépôt public sans activité
+# depuis 60 jours : à relancer depuis l'onglet Actions si c'est le cas.
+name: surveillance
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: surveillance
+  cancel-in-progress: true
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      issues: write
+    env:
+      HOTE: https://ambitious-glacier-076caad10.5.azurestaticapps.net
+      PAGES: "/ /fleur.html /plante.html /fruit.html /comment.html /style.css"
+    steps:
+      - name: Vérifier les pages
+        id: verif
+        run: |
+          echoue=""
+          for p in $PAGES; do
+            code=$(curl -sS -o page --max-time 20 --retry 2 --retry-delay 10 -w '%{http_code}' "$HOTE$p" || echo 000)
+            if [ "$code" != 200 ]; then echoue="$echoue $p($code)"; continue; fi
+            case "$p" in *.html|/) grep -q '<title>' page || echoue="$echoue $p(sans-titre)";; esac
+          done
+          echo "echoue=$echoue" >> "$GITHUB_OUTPUT"
+          if [ -n "$echoue" ]; then echo "::error::Pages en échec :$echoue"; exit 1; fi
+          echo "Toutes les pages répondent."
+      - name: Signaler par une issue
+        if: failure() && steps.verif.outputs.echoue != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ECHOUE: ${{ steps.verif.outputs.echoue }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          n=$(gh issue list --state open --search "in:title Surveillance : site en échec" --json number -q '.[0].number')
+          corps="$(date -u +%FT%TZ) — pages en échec :$ECHOUE — $RUN"
+          if [ -n "$n" ]; then gh issue comment "$n" --body "$corps"
+          else gh issue create --title "Surveillance : site en échec" --body "$corps"; fi
