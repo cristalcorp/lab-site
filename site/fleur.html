@@ -3,31 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>La fleur — Lab</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
-  <p class="site-name"><a href="index.html">Lab</a></p>
-  <nav aria-label="Menu principal">
-    <ul class="menu">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="fleur.html" aria-current="page">La fleur</a></li>
-      <li><a href="plante.html">La plante</a></li>
-      <li><a href="fruit.html">Le fruit</a></li>
-      <li><a href="comment.html">Comment ce site est fait</a></li>
-    </ul>
-  </nav>
+  <div class="barre">
+    <p class="site-name"><a href="index.html"><img src="img/fleur-vignette.svg" alt="" width="34" height="34">Lab</a></p>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fleur.html" aria-current="page">La fleur</a></li>
+        <li><a href="plante.html">La plante</a></li>
+        <li><a href="fruit.html">Le fruit</a></li>
+        <li><a href="comment.html">Comment ce site est fait</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
-  <h1>La fleur</h1>
-
-  <figure>
-    <img src="img/fleur.svg" alt="Dessin d'une fleur de passiflore vue de face : cinq pétales violets, une couronne de filaments et trois styles au centre.">
-    <figcaption>Schéma simplifié, dessiné pour ce site.</figcaption>
+<div class="entete-page">
+  <div>
+    <p class="surtitre">Passiflores</p>
+    <h1>La fleur</h1>
+    <p class="chapo">Sa forme, ses couleurs et sa structure.</p>
+  </div>
+  <figure class="planche fleur">
+    <img src="img/fleur.svg" alt="Fleur de passiflore vue de face : sépales verts et pétales blancs en étoile, couronne de filaments en bandes violet foncé, blanc et violet, étamines aux anthères jaunes et trois styles au centre." width="400" height="400">
+    <figcaption>Illustration dessinée pour ce site.</figcaption>
   </figure>
+</div>
 
+<article class="article">
   <h2>Forme</h2>
   <p>La fleur de passiflore est en général régulière : ses pièces sont disposées en cercle autour d'un centre.</p>
 
@@ -44,11 +53,18 @@
 
   <h2>Pollinisation</h2>
   <p>Beaucoup d'espèces sont pollinisées par des insectes. D'autres le sont par des animaux plus gros, comme certains oiseaux.</p>
+</article>
+
+<nav class="suivantes" aria-label="Pages voisines">
+  <a class="apres" href="plante.html"><span class="sens">Page suivante</span><span class="titre">La plante →</span></a>
+</nav>
 </main>
 
 <footer class="site-footer">
-  <p><a href="comment.html">Comment ce site est fait</a></p>
-  <p>Site du lab — pages statiques, en français.</p>
+  <div class="contenu">
+    <p>Site du lab — pages statiques, en français.</p>
+    <p><a href="comment.html">Comment ce site est fait</a></p>
+  </div>
 </footer>
 </body>
 </html>

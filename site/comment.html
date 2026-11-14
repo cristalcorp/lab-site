@@ -3,47 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Comment ce site est fait</title>
+<meta name="color-scheme" content="light dark">
+<title>Comment ce site est fait — Lab</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
-  <p class="site-name"><a href="index.html">Lab</a></p>
-  <nav aria-label="Menu principal">
-    <ul class="menu">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="fleur.html">La fleur</a></li>
-      <li><a href="plante.html">La plante</a></li>
-      <li><a href="fruit.html">Le fruit</a></li>
-      <li><a href="comment.html" aria-current="page">Comment ce site est fait</a></li>
-    </ul>
-  </nav>
+  <div class="barre">
+    <p class="site-name"><a href="index.html"><img src="img/fleur-vignette.svg" alt="" width="34" height="34">Lab</a></p>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fleur.html">La fleur</a></li>
+        <li><a href="plante.html">La plante</a></li>
+        <li><a href="fruit.html">Le fruit</a></li>
+        <li><a href="comment.html" aria-current="page">Comment ce site est fait</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
-  <p><a href="index.html">← Retour à l'accueil</a></p>
+<div class="entete-page">
+  <div>
+    <p class="surtitre">À propos</p>
+    <h1>Comment ce site est fait</h1>
+    <p class="chapo">Ce site est un lieu d'expérimentation : il est écrit, illustré et publié par un agent IA, à partir des consignes d'une personne.</p>
+  </div>
+</div>
 
-  <h1>Comment ce site est fait</h1>
-  <p>Ce site est produit par une équipe d'agents IA, selon un circuit de relecture simple. Aucune modification n'atteint le site public sans passer par chacune des étapes ci-dessous.</p>
-
+<article class="article">
   <h2>Qui fait quoi</h2>
   <ul>
-    <li>L'agent auteur écrit la page demandée et ouvre une demande de fusion contenant uniquement cette modification.</li>
-    <li>Le relecteur vérifie le contenu au regard de la charte du site : pas de donnée personnelle, pas de promesse commerciale, pas de ressource chargée depuis l'extérieur.</li>
-    <li>Le testeur fait les contrôles techniques sur la version exacte proposée : la page s'affiche, les liens fonctionnent, rien n'est chargé d'ailleurs.</li>
-    <li>Le chef lit les avis favorables du relecteur et du testeur, prend la décision et autorise la fusion. Sans avis favorable de chacun, la modification retourne à l'auteur.</li>
+    <li>Une personne donne la consigne : le sujet, ce qu'il faut ajouter ou changer.</li>
+    <li>Un agent IA écrit les pages, dessine les illustrations et propose la modification dans une demande de fusion.</li>
+    <li>Des contrôles automatiques vérifient chaque demande : pages bien formées, liens qui mènent quelque part, rien de chargé depuis l'extérieur, ni script ni formulaire, texte assez contrasté pour être lu. Si un contrôle échoue, la fusion est impossible.</li>
+    <li>L'agent regarde aussi le rendu sur des captures d'écran, sur ordinateur et sur téléphone, en mode clair et en mode sombre, avant de fusionner.</li>
   </ul>
 
   <h2>Et ensuite</h2>
-  <p>Une fois la fusion faite, la publication sur le site se fait automatiquement, en quelques minutes. Une erreur publiée se corrige par une nouvelle modification, qui suit le même circuit.</p>
+  <p>Une fois la fusion faite, la publication sur le site se fait automatiquement, en quelques minutes. Chaque heure, une vérification automatique s'assure que toutes les pages répondent. Une erreur publiée se corrige par une nouvelle modification, qui passe par les mêmes contrôles.</p>
+
+  <h2>Avant</h2>
+  <p>Les premières versions du site ont été produites par une équipe de plusieurs agents : un auteur, un relecteur, un testeur et un chef qui décidait de la fusion.</p>
 
   <h2>Ce que ce n'est pas</h2>
   <p>Ce site ne collecte aucune donnée, ne contient ni formulaire ni fichier à télécharger, et ne présente ni client réel ni offre commerciale.</p>
-
-  <footer class="site-footer">
-    <p><a href="comment.html">Comment ce site est fait</a></p>
-    <p>Site du lab — pages statiques, en français.</p>
-  </footer>
+</article>
 </main>
+
+<footer class="site-footer">
+  <div class="contenu">
+    <p>Site du lab — pages statiques, en français.</p>
+    <p><a href="comment.html">Comment ce site est fait</a></p>
+  </div>
+</footer>
 </body>
 </html>
