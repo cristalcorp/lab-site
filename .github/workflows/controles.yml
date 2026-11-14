@@ -1,0 +1,24 @@
+# Contrôles du site (D-045) : exigés par le ruleset de main avant toute fusion.
+# Bibliothèque standard de Python seulement ; actions épinglées par SHA (S-035).
+name: controles
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  controles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Contrôle du site
+        run: python3 -I scripts/controle.py site
